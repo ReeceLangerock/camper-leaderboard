@@ -4,6 +4,11 @@ import { shallow, mount, find, render, simulate } from 'enzyme'
 import LeaderboardRow from './../components/LeaderboardRow'
 
 describe('LeaderboardRow', () => {
+  it('renders without crashing', () => {
+    const div = document.createElement('div')
+    ReactDOM.render(<LeaderboardRow />, div)
+  })
+
   let component
   beforeEach(() => {
     const props = {
