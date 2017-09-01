@@ -9,8 +9,7 @@ script:
   - npm run build
   - npm test
 deploy:
-  - provider: surge
-  - project: ./build/
-  - domain: camper-leaderboard-rl.surge.sh
-  - skip_cleanup: true
-  - on: master
+  provider: surge
+  project: ./build/
+  domain: camper-leaderboard-rl.surge.sh
+  skip_cleanup: true
