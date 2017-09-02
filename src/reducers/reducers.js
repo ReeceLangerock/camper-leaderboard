@@ -1,8 +1,8 @@
-export var camperReducer = (state = { selection: "", allTimeCampers: [], recentCampers: [] }, action) => {
+export var camperReducer = (state = { selection: '', allTimeCampers: [], recentCampers: [] }, action) => {
   switch (action.type) {
-    case "SET_SELECTION":
-      return { ...state, selection: action.selection };
+    case 'SET_SELECTION':
+      return { ...state, selection: action.selection }
     default:
-      return state;
+      return state
   }
-};
+}

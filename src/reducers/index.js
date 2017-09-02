@@ -5,5 +5,5 @@ import {camperReducer} from './reducers'
 export default combineReducers({
   routing: routerReducer,
   camperReducer
-  
+
 })
