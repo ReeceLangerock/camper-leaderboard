@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot LeaderboardRow matches snapshot 1`] = `
+<LeaderboardRow>
+  <div
+    className="LeaderboardRow"
+  />
+</LeaderboardRow>
+`;

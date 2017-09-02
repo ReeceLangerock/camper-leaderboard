@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeaderboardHeader Snapshot LeaderboardHeader matches snapshot 1`] = `
+<LeaderboardHeader
+  store={[Function]}
+>
+  <div
+    className="LeaderboardHeader"
+  >
+    <button
+      onClick={[Function]}
+      value="recent"
+    >
+      Recent
+    </button>
+    <button
+      onClick={[Function]}
+      value="alltime"
+    >
+      All-Time
+    </button>
+  </div>
+</LeaderboardHeader>
+`;

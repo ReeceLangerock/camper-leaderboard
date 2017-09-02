@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Footer matches snapshot 1`] = `
+<Footer>
+  <div
+    className="Footer"
+  >
+    © 
+    2017
+     
+    <a
+      href="http://reecelangerock.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Reece Langerock
+    </a>
+  </div>
+</Footer>
+`;

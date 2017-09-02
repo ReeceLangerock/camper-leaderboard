@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Header matches snapshot 1`] = `
+<Header>
+  <div
+    className="Header"
+  >
+    <h1>
+      FCC Camper Leaderboard
+    </h1>
+  </div>
+</Header>
+`;
