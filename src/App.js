@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
+import { Provider } from 'react-redux'
+import store from './store/store'
 import './App.css'
+import Leaderboard from './components/Leaderboard'
 
 class App extends Component {
   render () {
-    return (
+    return (     <Provider store={store}>
       <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Leaderboard/>
       </div>
+      </Provider>
     )
   }
 }
