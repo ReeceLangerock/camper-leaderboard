@@ -1,24 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LeaderboardHeader Snapshot LeaderboardHeader matches snapshot 1`] = `
-<LeaderboardHeader
-  store={[Function]}
+<styled.div
+  className="LeaderboardHeader"
 >
-  <div
-    className="LeaderboardHeader"
-  >
-    <button
+  <h1>
+    FCC Camper Leaderboard
+  </h1>
+  <div>
+    <styled.button
+      disabled={false}
       onClick={[Function]}
       value="recent"
     >
       Recent
-    </button>
-    <button
+    </styled.button>
+    <styled.button
+      disabled={false}
       onClick={[Function]}
       value="alltime"
     >
       All-Time
-    </button>
+    </styled.button>
   </div>
-</LeaderboardHeader>
+</styled.div>
 `;

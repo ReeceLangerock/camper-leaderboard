@@ -6,25 +6,41 @@ import enzymeSerializer from "enzyme-to-json/serializer";
 
 expect.addSnapshotSerializer(enzymeSerializer);
 describe("LeaderboardRow", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<LeaderboardRow />, div);
-  });
+  // it("renders without crashing", () => {
+  //   const table = document.createElement("table");
+  //   ReactDOM.render(<LeaderboardRow />, table);
+  // });
 
-  let component;
+  let component,props, camper;
   beforeEach(() => {
-    const props = {};
-    component = mount(<LeaderboardRow {...props} />);
+    props = {};
+    camper = {
+      username: "Loading",
+      img: "#",
+      alltime: 42,
+      recent: 11,
+      lastUpdate: "2017-08-28T12:02:59.754Z"
+    };
+    component = shallow(<LeaderboardRow key={1} camper={camper} {...props} />);
   });
 
-  it("has the correct class", () => {
-    expect(component.hasClass("LeaderboardRow")).toEqual(true);
-  });
+ 
 });
 
 describe("Snapshot LeaderboardRow", () => {
+  let component,props, camper;
+  beforeEach(() => {
+    props = {};
+    camper = {
+      username: "Loading",
+      img: "#",
+      alltime: 42,
+      recent: 11,
+      lastUpdate: "2017-08-28T12:02:59.754Z"
+    };
+  });
   it("matches snapshot", () => {
-    const comp = mount(<LeaderboardRow />);
+    const comp = mount(<LeaderboardRow camper={camper} {...props}/>);
     expect(comp).toMatchSnapshot();
   });
 });

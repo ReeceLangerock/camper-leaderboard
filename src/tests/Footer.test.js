@@ -8,10 +8,7 @@ import enzymeSerializer from "enzyme-to-json/serializer";
 expect.addSnapshotSerializer(enzymeSerializer);
 
 describe("Footer", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<Footer />, div);
-  });
+ 
 
   let component;
   beforeEach(() => {

@@ -19,7 +19,14 @@ describe("Leaderboard", () => {
   let props;
   beforeEach(() => {
     props = {
-      selection: "",
+      selection: "recent",
+      recentCampers: [{
+        username: "Loading",
+        img: "#",
+        alltime: 42,
+        recent: 11,
+        lastUpdate: "2017-08-28T12:02:59.754Z"
+      }],
       store: mockStore
     };
     component = shallow(<Leaderboard store={mockStore} {...props} />);

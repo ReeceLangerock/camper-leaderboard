@@ -1,9 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot LeaderboardRow matches snapshot 1`] = `
-<LeaderboardRow>
-  <div
-    className="LeaderboardRow"
-  />
+<LeaderboardRow
+  camper={
+    Object {
+      "alltime": 42,
+      "img": "#",
+      "lastUpdate": "2017-08-28T12:02:59.754Z",
+      "recent": 11,
+      "username": "Loading",
+    }
+  }
+>
+  <styled.tr>
+    <tr
+      className="sc-bxivhb hqSmgW"
+    >
+      <styled.td>
+        <td
+          className="sc-bwzfXH fSqOZI"
+        />
+      </styled.td>
+      <styled.td>
+        <td
+          className="sc-htpNat kNLaxO"
+        >
+          <styled.img
+            src="#"
+          >
+            <img
+              className="sc-bdVaJa hQribE"
+              src="#"
+            />
+          </styled.img>
+           
+          Loading
+        </td>
+      </styled.td>
+      <styled.td>
+        <td
+          className="sc-bwzfXH fSqOZI"
+        >
+          42
+        </td>
+      </styled.td>
+      <styled.td>
+        <td
+          className="sc-bwzfXH fSqOZI"
+        >
+          11
+        </td>
+      </styled.td>
+    </tr>
+  </styled.tr>
 </LeaderboardRow>
 `;
