@@ -6,7 +6,7 @@ exports[`Snapshot Footer matches snapshot 1`] = `
     className="Footer"
   >
     <div
-      className="Footer sc-bdVaJa ghpEGm"
+      className="Footer sc-bdVaJa fmxYBs"
     >
       © 
       2017
@@ -18,6 +18,17 @@ exports[`Snapshot Footer matches snapshot 1`] = `
       >
         Reece Langerock
       </a>
+      <styled.i
+        aria-hidden="false"
+        className="fa fa-github"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="false"
+          className="fa fa-github sc-bwzfXH eZZhvG"
+          onClick={[Function]}
+        />
+      </styled.i>
     </div>
   </styled.div>
 </Footer>

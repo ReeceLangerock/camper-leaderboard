@@ -18,6 +18,7 @@ describe("LeaderboardHeader", () => {
   let component, props;
   beforeEach(() => {
     let getAlltimeCamperData = jest.fn()
+  
     props = {
       getAlltimeCamperData
     };
