@@ -4,10 +4,8 @@ import * as actions from "../actions/actions";
 
 import styled from "styled-components";
 
-const color = "E1BC29";
-
 const Header = styled.div`
-  border: 1px solid;
+  border: 3px solid #21623f;
   background-color: #f4faff;
   color: #535657;
   padding: 10px 10px 10px 20px;
@@ -16,11 +14,12 @@ const Header = styled.div`
   align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  transition: 0.5s linear;
   border-bottom: none;
 `;
 
 const Button = styled.button`
-  background-color: #3bb273;
+  background-color: #86CB92;
   padding: 5px 15px 5px 15px;
   margin-left:5px;
   margin-right: 5px;
@@ -33,7 +32,7 @@ const Button = styled.button`
   
 
   &:hover:enabled  {
-    color: #3bb273;
+    color: #21623F;
     transition: .5s linear;
     
     background-color: white;
@@ -74,15 +73,14 @@ export class LeaderboardHeader extends React.Component {
     const selection = this.props.selection;
     return (
       <Header className="LeaderboardHeader">
-       
         <h1>FCC Camper Leaderboard</h1>
         <div>
-        <Button disabled={selection === "recent"} value="recent" onClick={this.handleClick}>
-          Recent
-        </Button>
-        <Button disabled={selection === "alltime"} value="alltime" onClick={this.handleClick}>
-          All-Time
-        </Button>
+          <Button disabled={selection === "recent"} value="recent" onClick={this.handleClick}>
+            Recent
+          </Button>
+          <Button disabled={selection === "alltime"} value="alltime" onClick={this.handleClick}>
+            All-Time
+          </Button>
         </div>
       </Header>
     );

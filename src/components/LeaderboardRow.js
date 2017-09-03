@@ -6,12 +6,12 @@ const Image = styled.img`
   width: 40px;
   margin-right: 5px;
   border-radius: 3px;
-  border: 1px solid green;
+  border: 2px solid #86CB92;
   box-sizing: border-box;
 `;
 
 const Col = styled.td`
-  padding: 5px;
+  padding: 4px;
   border-right: 1px solid;
 `;
 const Camper = Col.extend`
@@ -19,12 +19,18 @@ const Camper = Col.extend`
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-
 `;
 
 const Row = styled.tr`
+  transition: 0.5s linear;
+
   &:nth-child(even) {
-    background-color: #DEE7E7;
+    background-color: #dee7e7;
+  }
+
+  &:hover {
+    color: #86CB92;
+    transition: 0.5s ease-in;
   }
 `;
 
@@ -33,12 +39,12 @@ export class LeaderboardRow extends React.Component {
     const camper = this.props.camper;
     return (
       <Row>
-        <Col key ={'rank'} >{this.props.rank}</Col>
-        <Camper key ={'camper'}>
+        <Col key={"rank"}>{this.props.rank}</Col>
+        <Camper key={"camper"}>
           <Image src={camper.img} /> {camper.username}
         </Camper>
-        <Col key ={'alltime'}>{camper.alltime}</Col>
-        <Col key ={'recent'}>{camper.recent}</Col>
+        <Col key={"alltime"}>{camper.alltime}</Col>
+        <Col key={"recent"}>{camper.recent}</Col>
       </Row>
     );
   }
