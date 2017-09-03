@@ -40,7 +40,7 @@ describe("Snapshot LeaderboardRow", () => {
     };
   });
   it("matches snapshot", () => {
-    const comp = mount(<LeaderboardRow camper={camper} {...props}/>);
+    const comp = shallow(<LeaderboardRow camper={camper} {...props}/>);
     expect(comp).toMatchSnapshot();
   });
 });

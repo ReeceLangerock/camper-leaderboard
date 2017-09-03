@@ -60,6 +60,7 @@ export class Leaderboard extends React.Component {
       <Container className="Leaderboard">
         <LeaderboardHeader />
         <Table>
+          <tbody>
           <tr>
             <th width={"5%"}>#</th>
             <th>Camper</th>
@@ -67,6 +68,8 @@ export class Leaderboard extends React.Component {
             <th>Points in past 30 Days</th>
           </tr>
           {this.renderLeaderboardRows()}
+          </tbody>
+          
         </Table>
       </Container>
     );

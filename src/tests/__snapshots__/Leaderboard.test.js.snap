@@ -6,34 +6,36 @@ exports[`Leaderboard matches snapshot 1`] = `
 >
   <Connect(LeaderboardHeader) />
   <styled.table>
-    <tr>
-      <th
-        width="5%"
-      >
-        #
-      </th>
-      <th>
-        Camper
-      </th>
-      <th>
-        All-Time Points
-      </th>
-      <th>
-        Points in past 30 Days
-      </th>
-    </tr>
-    <LeaderboardRow
-      camper={
-        Object {
-          "alltime": 42,
-          "img": "#",
-          "lastUpdate": "2017-08-28T12:02:59.754Z",
-          "recent": 11,
-          "username": "Loading",
+    <tbody>
+      <tr>
+        <th
+          width="5%"
+        >
+          #
+        </th>
+        <th>
+          Camper
+        </th>
+        <th>
+          All-Time Points
+        </th>
+        <th>
+          Points in past 30 Days
+        </th>
+      </tr>
+      <LeaderboardRow
+        camper={
+          Object {
+            "alltime": 42,
+            "img": "#",
+            "lastUpdate": "2017-08-28T12:02:59.754Z",
+            "recent": 11,
+            "username": "Loading",
+          }
         }
-      }
-      rank={1}
-    />
+        rank={1}
+      />
+    </tbody>
   </styled.table>
 </styled.div>
 `;
