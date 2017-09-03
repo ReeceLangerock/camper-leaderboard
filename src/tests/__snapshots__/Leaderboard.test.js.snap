@@ -8,9 +8,7 @@ exports[`Leaderboard matches snapshot 1`] = `
   <styled.table>
     <tbody>
       <tr>
-        <th
-          width="5%"
-        >
+        <th>
           #
         </th>
         <th>

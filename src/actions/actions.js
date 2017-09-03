@@ -18,7 +18,7 @@ export var getRecentCamperData = () => {
         dispatch(isRetrievingData(false))
       })
       .catch(function (error) {
-        throw error
+        // throw error
       })
   }
 }
@@ -34,7 +34,7 @@ export var getAlltimeCamperData = () => {
         dispatch(isRetrievingData(false))
       })
       .catch(function (error) {
-        throw error
+        // throw error
       })
   }
 }
