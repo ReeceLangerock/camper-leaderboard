@@ -11,8 +11,14 @@ const Image = styled.img`
 `
 
 const Col = styled.td`
-  padding: 4px;
+  padding: 5px;
   border-right: 1px solid;
+  @media screen and (max-width: 600px) {
+    
+    padding: 0;
+    font-size: .9rem;
+    
+}
 `
 const Camper = Col.extend`
   display: flex;
