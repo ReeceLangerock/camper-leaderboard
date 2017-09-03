@@ -4,8 +4,7 @@ import store from './store/store'
 import './App.css'
 import Leaderboard from './components/Leaderboard'
 import Footer from './components/Footer'
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 const Container = styled.div`
 display: flex;
@@ -18,7 +17,7 @@ class App extends Component {
     return (<Provider store={store}>
       <Container className='App'>
         <Leaderboard />
-        <Footer/>
+        <Footer />
       </Container>
     </Provider>
     )

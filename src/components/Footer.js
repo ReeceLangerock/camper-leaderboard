@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const FooterStyled = styled.div`
 
@@ -16,20 +16,20 @@ const FooterStyled = styled.div`
     color: #3bb273;
     text-decoration: none;
   }
-`;
+`
 
 export class Footer extends React.Component {
-  render() {
-    const currentYear = new Date().getFullYear();
+  render () {
+    const currentYear = new Date().getFullYear()
 
     return (
-      <FooterStyled className="Footer">
-        © {currentYear}{" "}
-        <a href="http://reecelangerock.com" rel="noopener noreferrer" target="_blank">
+      <FooterStyled className='Footer'>
+        © {currentYear}{' '}
+        <a href='http://reecelangerock.com' rel='noopener noreferrer' target='_blank'>
           Reece Langerock
         </a>
       </FooterStyled>
-    );
+    )
   }
 }
-export default Footer;
+export default Footer
